@@ -1,25 +1,109 @@
 body {
     font-family:cursive;
-    border:2px outset #72F08D;
+    border-radius:9px;
+    font-size:20px;
     padding:3px;
     background-image: url('http://img.freepik.com/free-vector/bright-background-with-dots_1055-3132.jpg?size=338&ext=jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
+#personalinformation {
+    float:right;
+    width:70%;
+    height:400px;
+    background-color:white;
+    margin:20px;
+    box-shadow:2px 4px 10px 4px #808080;
+    border-radius:10px;
+    padding: 5px;
+}
+#education {
+    float:right;
+    width:70%;
+    height:200px;
+    background-color:white;
+    margin:15px;
+    box-shadow:2px 4px 10px 4px #808080;
+    border-radius:10px;
+    padding:5px;
+}
+#workexperiences {
+    float:right;
+    width:70%;
+    height:300px;
+    background-color:white;
+    margin:20px;
+    box-shadow:2px 4px 10px 4px #808080;
+    border-radius:10px;
+    padding:5px;
+}
+#languages {
+    float:right;
+    width:70%;
+    height:300px;
+    background-color:white;
+    margin:20px;
+    box-shadow:2px 4px 10px 4px #808080;
+    border-radius:10px;
+    padding:5px;
+}
+#platforms {
+    float:right;
+    width:70%;
+    height:300px;
+    background-color:white;
+    margin:20px;
+    box-shadow:2px 4px 10px 4px #808080;
+    border-radius:10px;
+    padding:5px;
+    display:block;
+}
+#profile {
+    float:right;
+    width:70%;
+    height:250px;
+    background-color:white;
+    margin:20px;
+    box-shadow:2px 4px 10px 4px #808080;
+    border-radius:10px;
+    padding:5px;
+}
+#aside ul {
+    overflow:auto;
+    list-style-type:none;
+    width:20%;
+    height:70%;
+    position: fixed;
+    background-color:white;
+    margin:7px;
+    box-shadow:2px 4px 10px 4px #808080;
+    border-radius:10px;
+    padding:5px;
+    text-align:center;
+    line-height:2em;
+}
+#aside li a {
+    display:block;
+
+}
 h1 {
     background-color:black;
+    text-shadow: 2px 5px 10px white;
     color:white;
     font-family:cursive;
     font-weight:bold;
     text-align: center;
     padding:1px;
+    border-radius:10px;
 }
 #personalPhoto {
     border:2px solid black;
+    border-radius:5px;
     float:right;
     position: relative;
+    box-shadow: 2px 4px 5px 2px #80808080 ;
     bottom:100px;
-    right:350px;
+    right:50px;
     width:90px;
     height:125px;
     min-width: 40px;
@@ -35,7 +119,7 @@ h4 {
     border-bottom:2px solid #72f08d;
     font-weight:bold;
     font-style: italic;
-    font-size:17px;
+    font-size:24px;
 }
 a {
     text-decoration: none;
@@ -50,29 +134,29 @@ a:hover {
     bottom:100px;
     width:250px;
     height:100px;
-    max-width:25%;
-    max-height:15%;
+    min-width:5%;
     float:right;
 }
 #logo2 {
     position: relative;
     left:20px;
     bottom:75px;
-    width: 10%;
-    max-width:15%;
-    max-height: 15%;
+    width: 125px;
+    height:75px;
+    min-width:5%;
     float:right;
 }
 #logo3 {
     position: relative;
     right:10px;
     bottom:85px;
-    width:10%;
-    max-width: 15%;
-    max-height: 15%;
+    width:125px;
+    height:75px;
+    min-width:5%;
     float:right;
 }
 .job {
     text-indent:5em;
 }
+
 
