@@ -1,7 +1,7 @@
 body {
-    font-family:cursive;
+    font-family:cursive, sans-serif, serif;
     border-radius:9px;
-    font-size:20px;
+    font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));    
     padding:3px;
     background-image: url('http://img.freepik.com/free-vector/bright-background-with-dots_1055-3132.jpg?size=338&ext=jpg');
     background-repeat: no-repeat;
@@ -9,13 +9,18 @@ body {
 }
 #personalinformation {
     float:right;
-    width:70%;
-    height:400px;
+    width: 70%;
     background-color:white;
     margin:20px;
     box-shadow:2px 4px 10px 4px #808080;
     border-radius:10px;
-    padding: 5px;
+    padding: 1em;
+
+}
+.infolist {
+    box-sizing: border-box;
+    float:left;
+    width:calc (100%-95px);
 }
 #education {
     float:right;
@@ -25,7 +30,7 @@ body {
     margin:15px;
     box-shadow:2px 4px 10px 4px #808080;
     border-radius:10px;
-    padding:5px;
+    padding:1em;
 }
 #workexperiences {
     float:right;
@@ -35,7 +40,7 @@ body {
     margin:20px;
     box-shadow:2px 4px 10px 4px #808080;
     border-radius:10px;
-    padding:5px;
+    padding:1em;
 }
 #languages {
     float:right;
@@ -45,18 +50,23 @@ body {
     margin:20px;
     box-shadow:2px 4px 10px 4px #808080;
     border-radius:10px;
-    padding:5px;
+    padding:1em;
 }
 #platforms {
     float:right;
     width:70%;
-    height:300px;
+    overflow:hidden;
     background-color:white;
     margin:20px;
     box-shadow:2px 4px 10px 4px #808080;
     border-radius:10px;
-    padding:5px;
-    display:block;
+    padding:1em;
+    
+}
+.platformlist {
+    float:left;
+    box-sizing:border-box;
+    width:calc(100%-525px);
 }
 #profile {
     float:right;
@@ -66,25 +76,27 @@ body {
     margin:20px;
     box-shadow:2px 4px 10px 4px #808080;
     border-radius:10px;
-    padding:5px;
+    padding:1em;
 }
-#aside ul {
-    overflow:auto;
-    list-style-type:none;
-    width:20%;
+#aside  {
+    width:calc(100%-70%);
+    float:left;
     height:70%;
     position: fixed;
     background-color:white;
     margin:7px;
     box-shadow:2px 4px 10px 4px #808080;
     border-radius:10px;
-    padding:5px;
+    padding:1em;
     text-align:center;
     line-height:2em;
+    display:flex;
+    
 }
 #aside li a {
     display:block;
 
+    list-style-type:none;
 }
 h1 {
     background-color:black;
@@ -101,9 +113,6 @@ h1 {
     border-radius:5px;
     float:right;
     position: relative;
-    box-shadow: 2px 4px 5px 2px #80808080 ;
-    bottom:100px;
-    right:50px;
     width:90px;
     height:125px;
     min-width: 40px;
@@ -131,7 +140,6 @@ a:hover {
 }
 #logo1 {
     position: relative;
-    bottom:100px;
     width:250px;
     height:100px;
     min-width:5%;
@@ -140,7 +148,6 @@ a:hover {
 #logo2 {
     position: relative;
     left:20px;
-    bottom:75px;
     width: 125px;
     height:75px;
     min-width:5%;
@@ -149,7 +156,6 @@ a:hover {
 #logo3 {
     position: relative;
     right:10px;
-    bottom:85px;
     width:125px;
     height:75px;
     min-width:5%;
@@ -158,5 +164,4 @@ a:hover {
 .job {
     text-indent:5em;
 }
-
 
