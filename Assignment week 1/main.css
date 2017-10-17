@@ -1,3 +1,8 @@
+
+
+* {
+  box-sizing:border-box;
+}
 body {
     font-family:cursive, sans-serif, serif;
     border-radius:9px;
@@ -81,7 +86,6 @@ body {
 #aside  {
     width:calc(100%-70%);
     float:left;
-    height:70%;
     position: fixed;
     background-color:white;
     margin:7px;
@@ -91,12 +95,40 @@ body {
     text-align:center;
     line-height:2em;
     display:flex;
-    
+    overflow:auto;
 }
 #aside li a {
     display:block;
-
+}
+#aside li {
+  list-style-type:none;
+}
+@media only screen and (min-width:300px) and (max-width:520px) {
+  #aside {
+    position:relative;
+  }
+  #aside ul{
+    
+    padding:0px;
+    margin:0px;
+    overflow:hidden;
     list-style-type:none;
+  }
+  #aside li {
+    float:right;
+  }
+  #aside ul li a {
+    display:inline;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  #aside ul li a:hover {
+    font-size:16px;
+  }
+  #personalinformation {
+    margin-top:16px;
+  }
 }
 h1 {
     background-color:black;
