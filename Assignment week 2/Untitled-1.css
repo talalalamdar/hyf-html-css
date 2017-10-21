@@ -15,10 +15,10 @@ h1 {
     border-radius:7px;
     opacity:0.6;
     box-shadow: 2px 3px 4px 2px  #860D0D;
-    animation: mymove 10s linear 2s infinite;
-    -webkit-animation: mymove 10s linear 2s infinite;
-    -moz-animation: mymove 10s linear 2s infinite;
-    -o-animation: mymove 10s linear 2s infinite;
+    animation: mymove 20s linear 2s infinite;
+    -webkit-animation: mymove 20s linear 2s infinite;
+    -moz-animation: mymove 20s linear 2s infinite;
+    -o-animation: mymove 20s linear 2s infinite;
 }
 h2 {
     position:relative;
