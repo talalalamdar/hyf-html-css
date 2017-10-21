@@ -1,6 +1,5 @@
-* {
-    box-sizing: border-box;     
-}
+* { box-sizing: border-box; }
+
 body {
     font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
     font-family: sans-serif , serif ;
@@ -14,8 +13,12 @@ h1 {
     color:#E7FD1D;
     font-size:5em;
     border-radius:7px;
-    opacity:0.8;
+    opacity:0.6;
     box-shadow: 2px 3px 4px 2px  #860D0D;
+    animation: mymove 10s linear 2s infinite;
+    -webkit-animation: mymove 10s linear 2s infinite;
+    -moz-animation: mymove 10s linear 2s infinite;
+    -o-animation: mymove 10s linear 2s infinite;
 }
 h2 {
     position:relative;
@@ -26,6 +29,10 @@ h2 {
     border-radius:7px;
     opacity :0.5;
     box-shadow: 2px 4px 6px 2px rgba(30, 128, 6, 0.72);
+    animation : mymove2 1s linear infinite alternate;
+    -webkit-animation : mymove2 1s linear infinite alternate;
+    -moz-animation : mymove2 1s linear infinite alternate;
+    -o-animation : mymove2 1s linear infinite alternate;
 }
 h3 {
     margin-top:auto;
@@ -57,7 +64,8 @@ li:hover {
     border-radius:5px;
     box-shadow: 2px 2px 2px 2px #B1B0B0;
 }
-                  /*----------grid with floats------------ */
+
+            /*----------grid with floats------------ */
 
 #grid-floats {
     float:left;
@@ -73,10 +81,10 @@ li:hover {
     width:23%;
 }
 
-                 /*-----------mobile phones mode(Floats)----------- */
+            /*-----------mobile phones mode----------- */
 
 @media only screen and (min-width:300px) and (max-width:600px){
-   
+    
     #grid-floats li:nth-child(n+2) {
         width:40%;
     }
@@ -85,7 +93,7 @@ li:hover {
     }
 }
 
-                        /*-----------tablets mode(Floats)----------*/
+            /*-----------tablets mode----------*/
 
 @media only screen and (min-width:601px) and (max-width:1080px) {
     
@@ -97,7 +105,7 @@ li:hover {
     }
 }
 
-                    /*------------grid with flexbox----------*/
+            /*------------grid with flexbox----------*/
 
 #grid-flex .grid-item {
     width:23%;
@@ -115,7 +123,7 @@ li:hover {
      width:45%;
 }
 
-                /*-----------------mobile phones mode(Flexbox)---------------*/
+            /*-----------------mobile phones mode---------------*/
 
 @media only screen and (min-width:300px) and (max-width:600px) {
    
@@ -125,10 +133,10 @@ li:hover {
     }
     #grid-flex li:nth-child(n+2) {
         width:40%;
-    }    
+    } 
 }   
 
-                /*---------------Tablets mode(Flexbox)------------*/
+                /*---------------Tablets mode------------*/
 
 @media only screen and (min-width:601px) and (max-width:1080px) {
     
@@ -139,4 +147,46 @@ li:hover {
     #grid-flex li:nth-child(-n+2) {
         width:45%;
     }
+}
+
+                      /*--------keyframes---------*/
+   @keyframes mymove {
+       0%   {background-color:#860D0D; color:#E7FD1D;}
+       25%  {background-color:#096809; color:white;}
+       50%  {background-color:blue; color:black;}
+       75%  {background-color:#758385; color:#22E9F0;}
+   }
+   @-webkit-keyframes mymove {
+    0%   {background-color:#860D0D; color:#E7FD1D;}
+    25%  {background-color:#096809; color:white;}
+    50%  {background-color:blue; color:black;}
+    75%  {background-color:#758385; color:#22E9F0;}
+}
+   @-moz-keyframes mymove {
+    0%   {background-color:#860D0D; color:#E7FD1D;}
+    25%  {background-color:#096809; color:white;}
+    50%  {background-color:blue; color:black;}
+    75%  {background-color:#758385; color:#22E9F0;}
+}
+   @-o-keyframes mymove {
+    0%   {background-color:#860D0D; color:#E7FD1D;}
+    25%  {background-color:#096809; color:white;}
+    50%  {background-color:blue; color:black;}
+    75%  {background-color:#758385; color:#22E9F0;}
+} 
+   @keyframes mymove2 {
+       from {color:#12FA06;}
+       to   {color:#097C26;}
+   }
+   @-webkit-keyframes mymove2 {
+    from {color:#10FC04;}
+    to   {color:#097C26;}
+}
+   @-moz-keyframes mymove2 {
+    from {color:#13FA07;}
+    to   {color:#097C26;}
+}
+   @-o-keyframes mymove2 {
+    from {color:#13FD07;}
+    to   {color:#097C26;}
 }
