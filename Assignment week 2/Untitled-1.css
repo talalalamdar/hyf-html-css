@@ -33,6 +33,7 @@ h2 {
     -webkit-animation : mymove2 1s linear infinite alternate;
     -moz-animation : mymove2 1s linear infinite alternate;
     -o-animation : mymove2 1s linear infinite alternate;
+    overflow:hidden;
 }
 h3 {
     margin-top:auto;
@@ -55,9 +56,10 @@ img {
     margin:auto;
 }
 .grid-item {
-    padding:5px;
+    padding:8px;
     margin:10px;
     display:inline-block;
+    vertical-align:top;
 }
 li:hover {
     border:2px solid grey;
