@@ -150,6 +150,7 @@ h1 {
     box-shadow: 2px 2px 4px 2px black;
     line-height: 1.5em;
     display: flex;
+    border-radius:7px;
 }
 .left-side a {
     color:black;
