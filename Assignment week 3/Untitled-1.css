@@ -1,0 +1,379 @@
+*{box-sizing: border-box;}
+html{font-size:16px;}
+body { 
+    width:100%;
+    overflow:hidden;
+    margin: 0px;
+    padding: 0px;
+    font-family:serif;
+    font-size:calc(14px+(26-14))*((100vw-300px)/(1600-300)));
+     text-rendering: optimizeLegibility;
+}
+
+        /*--------navigation menu----------*/
+
+.navbar {
+    margin: :0;
+    padding: 0;
+    background-color: black;
+    width:100%;
+    height:40px;
+}
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align:center;
+    float:right;
+   
+}
+.navbar li {
+    display:inline-block;
+    height:;
+    text-align: center;
+    padding:0px;
+    padding-bottom:10px;
+    margin:5px;
+    width:80px;
+    border-left:1px solid grey;
+}
+
+.navbar li a {
+    color:white;
+    padding: 5px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+.navbar a:hover {
+    background-color: lightblue;
+    color:black;
+} 
+
+                /*---------images container at the top----------*/
+
+.container {
+    position:relative;
+    bottom:0.7em;
+    width:100%;
+    background-image: url(https://assets.fstatic.nl/master_1428/assets/components/search-banner/images/herenhuis-silhouet.svg);
+    background-color:lightblue;
+    height:250px;
+    display:flex;
+    justify-content: space-between;
+    overflow:hidden;
+    margin:0px;
+    box-shadow: 2px 4px 3px 2px lightblue;
+}
+h1 {
+    text-align: center;
+    background-color: lightblue;
+    padding: 10px;
+    margin:0;
+}
+.limage {
+    position: relative;
+    min-width:100px;
+}
+.rimage {
+    float:right;
+    position: relative;
+    top:0.5em;
+    min-width:100px; 
+}
+
+            /*------------Main page content----------*/
+
+.main {
+    display:flex;
+}
+            /*------search bar left side-------*/
+.search-bar {
+    margin: 0px;
+    padding: 0px;
+    text-align:right;
+    width:25%;
+    float:left;
+    clear:both;
+    position: relative;
+    background-color: black;
+    font-weight: bold;
+}
+.search-bar-nav {
+    margin:0;
+    padding:5px;
+}
+.search-bar-nav li {
+    display:block;
+    color:white;
+}
+.search-bar-nav li a {
+    display:block;
+    color:white;
+    text-decoration:none;
+    text-align: center;
+    margin:10px;
+    padding:10px;
+}
+.search-bar-nav a:hover {
+    background-color: lightblue;
+    color:black;
+}
+                /*-------left side items-------*/
+.left-side {
+    width:40%;
+    display:flex;
+    flex-direction: column;
+    padding:10px;
+    margin:10px;    
+}
+.left-side img {
+    max-width:40%;
+    object-fit:contain;
+    box-sizing: border-box;
+    float:right;
+    clear:both;
+    overflow: hidden;
+    border:1px solid black;
+    max-height: 100%;
+    position: relative;
+    bottom:2.9em;   
+}
+.item {
+    box-sizing: border-box;
+    width:90%;
+    height:120px;
+    margin:20px;
+    font-size: 14px;
+    padding:5px;
+    border:1px solid black;
+    box-shadow: 2px 2px 4px 2px black;
+    line-height: 1.5em;
+    display: flex;
+}
+.left-side a {
+    color:black;
+    font-weight:bold;
+}
+
+.item:hover {
+    box-shadow: 2px 2px 4px 2px lightblue;
+    font-size:16px;
+    font-weight:bold;
+}
+h3 {
+  text-align:center;
+  font-size:1.5em;    
+  padding:10px;
+  border-bottom: 1px solid lightblue;
+    width:100%;
+}
+        /*---------right side containers--------*/
+.right-side {
+    width:35%;
+}
+.insperation {
+    height: 16em;
+    width:90%;
+    float:right;
+    top:5px;
+    right:5px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image:url(https://assets.fstatic.nl/master_1428/assets/components/inspiration-banner/images/20171020-huizen-met-een-naam-min.png);
+    border: 1px solid black;
+    border-radius:10px;
+     filter: brightness(60%);
+    box-shadow: 2px 2px 4px 2px black;
+}
+.insperation:hover {
+    box-shadow :2px 2px 4px 2px lightblue;
+    filter:brightness(100%);
+}
+
+.insperation p {
+    text-align: center;
+    font-size: 2em;
+    margin-top:40px;
+    color:white;
+    font-weight:bold;
+    overflow: hidden;
+}
+.herfst {
+    width:90%;
+    height:15em;
+    float:right;
+    position: relative;
+    top:1em;
+    right:5px;
+    background-image:url(https://content.funda.nl/media/123915/header_2016x658_gamma-herfstklaar-1.jpg);
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    border:1px solid black;
+    border-radius:10px;
+    filter: brightness(60%);
+    box-shadow: 2px 2px 4px 2px black;
+}
+.herfst:hover {
+    box-shadow:2px 2px 4px 2px lightblue;
+    filter:brightness(100%);
+}
+.herfst p {
+   text-align: center;
+    font-size: 2em;
+    margin-top:100px;
+    color:white;
+    font-weight:bold;
+    overflow: hidden;
+}
+
+                        /*--------footer--------*/
+
+.footer {
+    display:flex;
+    background-color:gainsboro;
+    width:100%;
+    border-top:1px solid black;
+    text-align: center;
+    border-bottom:2px solid white;
+}
+.contact {
+    float:left;
+    width:50%;
+    display: flex;
+}
+.first {
+    
+    line-height: 1.8em;
+    margin:4px;
+     padding:3px;
+}
+.second {
+    float:left;
+    line-height: 1.8em;
+    margin:4px;
+     padding:3px;
+}
+.third {
+    float:left;
+    padding:3px;
+
+    line-height: 1.8em;
+    margin:4px;
+}
+.fourth {
+    float:right;
+    margin:4px;
+    text-decoration: none;
+   
+    line-height: 1.8em;
+    padding:3px;
+}
+a {text-decoration: none;color:darkblue;}
+a:visited {color:none;}
+a:hover {color:crimson}
+ul {list-style-type: none;}
+.social {
+    width:40%;
+    background-color: black;
+    position: relative;
+    margin-left:150px;
+    float:right;
+    clear:both;
+    padding:10px;
+    text-align: center;
+    overflow: hidden;
+}
+.fa {
+    padding: 20px;
+    font-size: 28px;
+    width: 60px;
+    height:60px;
+    text-align: center;
+    text-decoration: none;
+    color:white;
+    border-radius:50%;
+    position: relative;
+    margin-top:20px;
+}
+.fa:hover {;color:lightblue;}  
+.social ul {
+    display:flex;
+    text-align: center;
+   justify-content:  center;
+    padding: 10px;
+    margin:5px;
+        
+}
+.social li {
+    padding: 10px;
+    margin:5px;
+    color:white;
+}
+.social li:nth-child(1) {
+    border-right:1px solid white;
+}
+.social li a{color:white;}
+.social li a:hover{color:lightblue;}
+
+            /*--------media queries tablet mode-------*/
+
+@media only screen and (min-width:751px) and (max-width:1040px) {
+    
+    .main {display:block;}
+    .left-side{
+        position: relative; 
+        width:55%;
+        margin:0;
+    }
+    .search-bar {width:100%;display:block;position: relative;}
+    .right-side{
+        flex-direction: column;
+        float: right;
+        width:40%;
+        position: relative;
+        bottom:33em;
+        right:10px;
+        margin-bottom:20px;
+    }
+    .footer {display:inline-block;position:relative;bottom: 30em;}
+    .contact{display: inline-block;width:100%;} 
+    .first{width:36%;}
+    .second{width:36%;float: right;position: relative;bottom: 10em;right: 3em}
+    .third{width:40%;}
+    .fourth{width:40%;float: right;position: relative;bottom: 10em;right:3em;}
+    .social{width:100%;display:block;position: relative}
+    
+}
+
+            /*--------media queries mobile mode--------*/
+
+@media only screen and (min-width:200px) and (max-width:750px) {
+    .rimage {display:none;}
+    .main {display:block;}
+    .left-side{
+        position: relative;
+        top:1em;
+        width:90%;
+        display:block;
+        margin:0;
+    }
+    .search-bar {width:100%;display:block;position: relative;}
+    .right-side{
+        display:block;
+        float: left;
+        width:90%;
+        position: relative;
+        left:10px;
+        margin-bottom:20px;
+    }
+    .footer {display:inline-block;position:relative;top:2em;}
+    .contact{display: inline-block;width:100%;} 
+    .first{width:36%;}
+    .second{width:36%;float: right;position: relative;bottom: 10em;right: 3em}
+    .third{width:40%;}
+    .fourth{width:40%;float: right;position: relative;bottom: 10em;right:3em;}
+    .social{width:100%;display:block;position: relative}
+}    
