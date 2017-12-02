@@ -1,0 +1,199 @@
+
+
+* {
+  box-sizing:border-box;
+}
+body {
+    font-family:cursive, sans-serif, serif;
+    border-radius:9px;
+    font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));    
+    padding:3px;
+    background-image: url('http://img.freepik.com/free-vector/bright-background-with-dots_1055-3132.jpg?size=338&ext=jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#personalinformation {
+    float:right;
+    width: 70%;
+    background-color:white;
+    margin:20px;
+    box-shadow:2px 4px 10px 4px #808080;
+    border-radius:10px;
+    padding: 1em;
+
+}
+.infolist {
+    box-sizing: border-box;
+    float:left;
+    width:calc (100%-95px);
+}
+#education {
+    float:right;
+    width:70%;
+    height:200px;
+    background-color:white;
+    margin:15px;
+    box-shadow:2px 4px 10px 4px #808080;
+    border-radius:10px;
+    padding:1em;
+}
+#workexperiences {
+    float:right;
+    width:70%;
+    height:300px;
+    background-color:white;
+    margin:20px;
+    box-shadow:2px 4px 10px 4px #808080;
+    border-radius:10px;
+    padding:1em;
+}
+#languages {
+    float:right;
+    width:70%;
+    height:300px;
+    background-color:white;
+    margin:20px;
+    box-shadow:2px 4px 10px 4px #808080;
+    border-radius:10px;
+    padding:1em;
+}
+#platforms {
+    float:right;
+    width:70%;
+    overflow:hidden;
+    background-color:white;
+    margin:20px;
+    box-shadow:2px 4px 10px 4px #808080;
+    border-radius:10px;
+    padding:1em;
+    
+}
+.platformlist {
+    float:left;
+    box-sizing:border-box;
+    width:calc(100%-525px);
+}
+#profile {
+    float:right;
+    width:70%;
+    height:250px;
+    background-color:white;
+    margin:20px;
+    box-shadow:2px 4px 10px 4px #808080;
+    border-radius:10px;
+    padding:1em;
+}
+#aside  {
+    width:calc(100%-70%);
+    float:left;
+    position: fixed;
+    background-color:white;
+    margin:7px;
+    box-shadow:2px 4px 10px 4px #808080;
+    border-radius:10px;
+    padding:1em;
+    text-align:center;
+    line-height:2em;
+    display:flex;
+    overflow:auto;
+}
+#aside li a {
+    display:block;
+}
+#aside li {
+  list-style-type:none;
+}
+@media only screen and (min-width:300px) and (max-width:520px) {
+  #aside {
+    position:relative;
+  }
+  #aside ul{
+    
+    padding:0px;
+    margin:0px;
+    overflow:hidden;
+    list-style-type:none;
+  }
+  #aside li {
+    float:right;
+  }
+  #aside ul li a {
+    display:inline;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  #aside ul li a:hover {
+    font-size:16px;
+  }
+  #personalinformation {
+    margin-top:16px;
+  }
+}
+h1 {
+    background-color:black;
+    text-shadow: 2px 5px 10px white;
+    color:white;
+    font-family:cursive;
+    font-weight:bold;
+    text-align: center;
+    padding:1px;
+    border-radius:10px;
+}
+#personalPhoto {
+    border:2px solid black;
+    border-radius:5px;
+    float:right;
+    position: relative;
+    width:90px;
+    height:125px;
+    min-width: 40px;
+    max-width:90px;
+    min-height:60px;
+    max-height:125px;
+}  
+p {
+    padding:3px;
+}
+h4 {
+    text-align:left;
+    border-bottom:2px solid #72f08d;
+    font-weight:bold;
+    font-style: italic;
+    font-size:24px;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    color:#72f08d;
+    font-weight:bold;
+    font-size:25px;
+}
+#logo1 {
+    position: relative;
+    width:250px;
+    height:100px;
+    min-width:5%;
+    float:right;
+}
+#logo2 {
+    position: relative;
+    left:20px;
+    width: 125px;
+    height:75px;
+    min-width:5%;
+    float:right;
+}
+#logo3 {
+    position: relative;
+    right:10px;
+    width:125px;
+    height:75px;
+    min-width:5%;
+    float:right;
+}
+.job {
+    text-indent:5em;
+}
+

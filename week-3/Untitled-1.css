@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 *{box-sizing: border-box;}
+=======
+*{box-sizing: border-box;-webkit-box-sizing: border-box; -moz-box-sizing: border-box;}
+>>>>>>> 35ef597c939502e59dc0225dcffbc8285079a82e
 html{font-size:16px;}
 body { 
     width:100%;
@@ -64,7 +68,10 @@ body {
     justify-content: space-between;
     overflow:hidden;
     margin:0px;
+<<<<<<< HEAD
     box-shadow: 2px 4px 3px 2px lightblue;
+=======
+>>>>>>> 35ef597c939502e59dc0225dcffbc8285079a82e
 }
 h1 {
     text-align: center;
@@ -151,6 +158,10 @@ h1 {
     box-shadow: 2px 2px 4px 2px black;
     line-height: 1.5em;
     display: flex;
+<<<<<<< HEAD
+=======
+    border-radius:7px;
+>>>>>>> 35ef597c939502e59dc0225dcffbc8285079a82e
 }
 .left-side a {
     color:black;
